@@ -1,0 +1,71 @@
+
+body{
+    font-family: 'Lato';
+    font-size: 14px;
+}
+.colortest{
+    
+background: #67B26F; /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #67B26F , #4ca2cd); /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #67B26F , #4ca2cd); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+       
+        
+}
+
+.splash-page{
+    position: relative;
+    top: 35%
+}
+
+h1{
+    
+    
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #fff;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    top: 30%;
+    font-size: 300%;
+    font-weight: 100;
+    
+}
+
+
+
+
+.btn-full:visited,
+.btn-full:link{
+    position: relative;
+    display: inline-block;
+    padding: 10px 40px;
+    margin: 0 auto;
+    margin-top: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    border: 2px solid #fff;
+    border-radius: 200px;
+    background-color: transparent;
+    color: white;
+    font-size: 120%;
+    text-decoration: none;
+    transition: all 0.5 ease-out ;
+}
+
+
+
+
+.btn-full:hover,
+.btn-full:active{
+    width: 52px;
+    height: 22px;
+    text-align: center;
+    font-size: 130%;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+
+
+
+ 

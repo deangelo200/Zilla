@@ -1,0 +1,21 @@
+
+
+.picture-background{
+    
+    background-image:linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url(../img/body-img/body1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+
+
+.main-home-nav{
+   background-color: rgba(0, 188, 212, 0.5);
+}
+
+.main-home-nav:after,
+.main-home-nav:before{
+    background-color: rgba(0, 188, 212, 0.5);
+}
+
+   
