@@ -100,6 +100,11 @@ mySwiper.on('slideChangeEnd',function(){
     
 })
 
+$("bottom-btn-share-hidden").click(function(){
+    window.plugins.socialsharing.share('Message, subject, image and link', 'The subject', 'https://www.google.nl/images/srpr/logo4w.png', 'http://www.x-services.nl');
+
+})
+
 
 /*$("#bottom-btn-favorite-hidden").click(function(){
     var temp=$(".swiper-slide-active").text(); 
