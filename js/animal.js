@@ -122,7 +122,13 @@ var onError = function(msg) {
 
 
 $("bottom-btn-share-hidden").click(function(){
-  window.plugins.socialsharing.shareWithOptions(options, onSuccess, onError);
+    window.plugins.socialsharing.shareViaFacebook('Message via Facebook', 
+                                                 null /* img */, 
+                                                 null /* url */, 
+                                                 null, 
+                                                 function(errormsg){alert("Error: Cannot Share")}
+                                                 );
+    
 })
 
 
