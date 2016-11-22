@@ -121,7 +121,16 @@ var onError = function(msg) {
  
 
 
-$("bottom-btn-share-hidden").click(function(){
+
+
+function onLoad() {
+    document.addEventListener("deviceready", onDeviceReady, false);
+   
+}
+
+function onDeviceReady() {
+    
+    $("bottom-btn-share-hidden").click(function(){
     window.plugins.socialsharing.shareViaFacebook('Message via Facebook', 
                                                  null /* img */, 
                                                  null /* url */, 
@@ -130,6 +139,13 @@ $("bottom-btn-share-hidden").click(function(){
                                                  );
     
 })
+  
+}
+
+
+
+
+
 
 
 /*$("#bottom-btn-favorite-hidden").click(function(){
