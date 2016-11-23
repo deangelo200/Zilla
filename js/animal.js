@@ -136,15 +136,15 @@ function onDeviceReady() {
   
 }
 
-    $("bottom-btn-share-hidden").click(function(){
+   function shareFaceBook(){
     window.plugins.socialsharing.shareViaFacebook('Message via Facebook', 
                                                  null /* img */, 
                                                  null /* url */, 
                                                  null, 
                                                  function(errormsg){alert("Error: Cannot Share")}
                                                  );
-    
-})
+   
+}
 
 
 
