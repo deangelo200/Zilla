@@ -130,6 +130,8 @@ function onLoad() {
 
 function onDeviceReady() {
     
+    alert("device is ready");
+    
     $("bottom-btn-share-hidden").click(function(){
     window.plugins.socialsharing.shareViaFacebook('Message via Facebook', 
                                                  null /* img */, 
