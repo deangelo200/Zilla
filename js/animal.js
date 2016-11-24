@@ -145,6 +145,17 @@ function onDeviceReady() {
                                                  );
    
 }
+function printScreen(){
+navigator.screenshot.save(function(error,res){
+  if(error){
+    console.error(error);
+  }else{
+    console.log('ok',res.filePath);
+  }
+});
+}
+
+
 
 
 
