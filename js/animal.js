@@ -156,7 +156,7 @@ navigator.screenshot.save(function(error,res){
   }
 },'jpg',100,'myScreenShot');
     
-    
+    //test mac
     
 }
 
