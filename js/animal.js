@@ -147,8 +147,9 @@ function onDeviceReady() {
 }
 function printScreen(){
     
-    
+   alert("test one"); 
 navigator.screenshot.save(function(error,res){
+    alert("test two"); 
   if(error){
     console.error(error);
   }else{
