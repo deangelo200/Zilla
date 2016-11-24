@@ -153,6 +153,7 @@ navigator.screenshot.save(function(error,res){
     console.error(error);
   }else{
     console.log('ok',res.filePath); //should be path/to/myScreenshot.jpg
+      alert(res.filePath)
   }
 },'jpg',100,'myScreenShot');
     
