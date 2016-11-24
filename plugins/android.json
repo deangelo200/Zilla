@@ -18,9 +18,6 @@
         },
         "cordova-plugin-x-socialsharing": {
             "PACKAGE_NAME": "com.phonegap.helloworld"
-        },
-        "com.darktalker.cordova.screenshot": {
-            "PACKAGE_NAME": "com.phonegap.helloworld"
         }
     },
     "dependent_plugins": {}

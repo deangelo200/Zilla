@@ -15,14 +15,6 @@ module.exports = [
         "clobbers": [
             "window.plugins.socialsharing"
         ]
-    },
-    {
-        "id": "com.darktalker.cordova.screenshot.screenshot",
-        "file": "plugins/com.darktalker.cordova.screenshot/www/Screenshot.js",
-        "pluginId": "com.darktalker.cordova.screenshot",
-        "merges": [
-            "navigator.screenshot"
-        ]
     }
 ];
 module.exports.metadata = 
@@ -31,8 +23,7 @@ module.exports.metadata =
     "cordova-plugin-console": "1.0.4",
     "cordova-plugin-statusbar": "1.0.1",
     "cordova-plugin-whitelist": "1.2.2",
-    "cordova-plugin-x-socialsharing": "5.1.3",
-    "com.darktalker.cordova.screenshot": "0.1.5"
+    "cordova-plugin-x-socialsharing": "5.1.3"
 };
 // BOTTOM OF METADATA
 });
