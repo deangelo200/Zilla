@@ -145,22 +145,21 @@ function onDeviceReady() {
                                                  );
    
 }
-function printScreen(){
-    
-   alert("test one"); 
-navigator.screenshot.save(function(error,res){
-    alert("test two"); 
-  if(error){
-    console.error(error);
-  }else{
-    console.log('ok',res.filePath); //should be path/to/myScreenshot.jpg
-      alert(res.filePath)
-  }
-},'jpg',100,'myScreenShot');
-    
-    //test mac
-    
-}
+function shareFact(){
+  
+    var imageLink;
+        console.log("Calling from CapturePhoto");
+        navigator.screenshot.save(function(error, res){
+            if(error){
+                console.log(error);
+            }else{
+                console.log('ok',res.filePath);
+                imageLink = res.filePath;
+                window.plugins.socialsharing.share(null,null, 'file://'+imageLink, null);
+                
+            }
+        }, 'jpg',100,'myScreenShot');
+    }
 
 
 
