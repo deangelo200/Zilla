@@ -146,13 +146,18 @@ function onDeviceReady() {
    
 }
 function printScreen(){
+    
+    
 navigator.screenshot.save(function(error,res){
   if(error){
     console.error(error);
   }else{
-    console.log('ok',res.filePath);
+    console.log('ok',res.filePath); //should be path/to/myScreenshot.jpg
   }
-});
+},'jpg',100,'myScreenShot');
+    
+    
+    
 }
 
 
