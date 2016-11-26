@@ -41,24 +41,9 @@ $.each(favoriteFact, function(key, value) {
     var line = value
 */      var testArray = [];
 
-    
-        
-          for(var i = 0 ; i <= 100 ; i++){ // will change this later
-        
-        if(localStorage.getItem(`${"af_"+i}`)!=undefined){
-         
-              var example = 
-                    "<div class='swiper-slide'>" +
-                            "<span>"+localStorage.getItem(`${"af_"+i}`)+"</span>"+
-                        "</div>";
-           
-        $(".swiper-wrapper").prepend(example);
-            
-        } 
-        
 
 
-    for(var i = 0 ; i <= localStorage.length ; i++){
+    for(var i = 0 ; i <= 100 ; i++){
         
         if(localStorage.getItem(`${"af_"+i}`)!=undefined){
          
