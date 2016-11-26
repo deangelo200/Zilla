@@ -40,7 +40,7 @@ var mySwiper = myApp.swiper('.swiper-container', {
        
       
         var example = 
-                    `<div class='swiper-slide' id="${'animal_'+i}" data-idnum ="${'af_'+i}"  data-favorite="false">` +
+                   `<div class='swiper-slide' id="${i}">` +
                             "<span>"+lines[i]+"</span>"+
                         "</div>";
  
