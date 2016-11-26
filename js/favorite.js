@@ -41,9 +41,8 @@ $.each(favoriteFact, function(key, value) {
     var line = value
 */      var testArray = [];
 
-
-
-    for(var i = 0 ; i <= 100 ; i++){
+    $(document).ready(function(){
+        for(var i = 0 ; i <= 100 ; i++){
         
         if(localStorage.getItem(`${"af_"+i}`)!=undefined){
          
@@ -55,13 +54,13 @@ $.each(favoriteFact, function(key, value) {
         $(".swiper-wrapper").prepend(example);
             
         } 
-        
-        
-        
-        
+    
 }
      mySwiper.updateContainerSize() 
     mySwiper.updateSlidesSize() 
+    })
+
+    
 
 
   
