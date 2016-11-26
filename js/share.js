@@ -1,6 +1,13 @@
-var menuBar =           '<li class="side-menu-item">'+
+var menuBar =           
+                         
+                        
+                        '<li class="side-menu-item">'+
                           '<img class="menu-icon" src="img/menu/favorite.png">'+
                            '<a href="favorite.html" class="external">Favorite</a>'+
+                        '</li>'+
+                        '<li class="side-menu-item">'+
+                            '<img class="menu-icon" src="img/menu/africa.png">'+
+                           '<a href="africa.html" class="external">Africa</a>'+
                         '</li>'+
                          '<li class="side-menu-item">'+
                           '<img class="menu-icon" src="img/menu/animal.png">'+
