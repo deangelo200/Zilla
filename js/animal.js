@@ -40,7 +40,7 @@ var mySwiper = myApp.swiper('.swiper-container', {
        
       
         var example = 
-                    `<div class='swiper-slide' id="${'animal_'+i}" data-favorite="false">` +
+                    `<div class='swiper-slide' id="${'animal_'+i}" data-idnum ="${'af_'+i}"  data-favorite="false">` +
                             "<span>"+lines[i]+"</span>"+
                         "</div>";
  
@@ -124,25 +124,6 @@ mySwiper.on('slideChangeEnd',function(){
 })
 
 
-// this is the complete list of currently supported params you can pass to the plugin (all optional) 
-var options = {
-  message: 'share this', // not supported on some apps (Facebook, Instagram) 
-  subject: 'the subject', // fi. for email 
-  files: ['', ''], // an array of filenames either locally or remotely 
-  url: 'https://www.website.com/foo/#bar?a=b',
-  chooserTitle: 'Pick an app' // Android only, you can override the default share sheet title 
-}
- 
-var onSuccess = function(result) {
-  console.log("Share completed? " + result.completed); // On Android apps mostly return false even while it's true 
-  console.log("Shared to app: " + result.app); // On Android result.app is currently empty. On iOS it's empty when sharing is cancelled (result.completed=false) 
-}
- 
-var onError = function(msg) {
-  console.log("Sharing failed with message: " + msg);
-}
- 
-
 
 
 
@@ -159,15 +140,7 @@ function onDeviceReady() {
   
 }
 
-   function shareFaceBook(){
-    window.plugins.socialsharing.shareViaFacebook('Message via Facebook', 
-                                                 null /* img */, 
-                                                 null /* url */, 
-                                                 null, 
-                                                 function(errormsg){alert("Error: Cannot Share")}
-                                                 );
-   
-}
+  
 function shareFact(){
   
     var imageLink;
@@ -189,97 +162,42 @@ function shareFact(){
 
 
 
-
-
-/*$("#bottom-btn-favorite-hidden").click(function(){
-    var temp=$(".swiper-slide-active").text(); 
-   favorite.push(temp);
-    localStorage.setItem("favorite",JSON.stringify(favorite)); 
-    
-   
-}); */
-
-
-
-
-/*$("#bottom-btn-favorite-hidden").click(
-function(){
-    var temp=$(".swiper-slide-active").text(); 
-   favorite.push(temp);
-    localStorage.setItem("favorite",JSON.stringify(favorite));  
-    
-    
-});
-
-*/
-
-
-/*  $("#bottom-btn-favorite-hidden").on('click',function(){
-
-if($("#bottom-btn-favorite-hidden").attr('data-click-state') == 1) {  
-    
-$("#bottom-btn-favorite-hidden").attr('data-click-state', 0)
-/*Change this to your own property / function - second function State 2
-
-$(".swiper-slide-active").addClass("favorite-dislike").removeClass("favorite-like");
-     $("#bottom-btn-favorite-hidden").css("color","white");
-    
-    
-    
-    
-    
-/*Click State 1 finish
-} else {
-$("#bottom-btn-favorite-hidden").attr('data-click-state', 1)
-/*Change this to your own property / function - first function State 
-$(".swiper-slide-active").addClass("favorite-like").removeClass("favorite-dislike");
-    $("#bottom-btn-favorite-hidden").css("color","red");
-
-
-
-/*Click State 2 finish
-}
-
-}); */
-
-var boxOfFacts = {};
-
-
 function favoriteFact(){        
 $(document).ready(function(){
     
 if($(".swiper-slide-active").attr("data-favorite")=="false"){
 /// adding it to favorite    
 var keyName = $(".swiper-slide-active").attr("id") // getting fact id name
+var idName = $(".swiper-slide-active").attr("data-idnum")
 var KeyValue = $(".swiper-slide-active").text();  // getting fact text value
-boxOfFacts[keyName] = KeyValue; // adding object
-console.log(boxOfFacts); 
+//boxOfFacts[keyName] = KeyValue; // adding object
+//console.log(boxOfFacts); 
 $(".swiper-slide-active").attr("data-favorite",true); // setting favorite data value to true
+    
 $("#bottom-btn-favorite-hidden").css("color","red");  // changing the color of the white heart instantly
+    
 localStorage.setItem(`${keyName}`,$("#"+`${keyName}`).attr("data-favorite"));
-
+    
+//localStorage.setItem("boxOfFacts", JSON.stringify(boxOfFacts));
+localStorage.setItem(`${idName}`,`${KeyValue}`)
       
 }
+    
 /// removing it from favorite
 else if($(".swiper-slide-active").attr("data-favorite")=="true"){
     var keyName = $(".swiper-slide-active").attr("id") // getting fact id name
-    delete boxOfFacts[keyName]; // deletting the fact from the favorite object
+    var idName = $(".swiper-slide-active").attr("data-idnum")
     $(".swiper-slide-active").attr("data-favorite",false);
     $("#bottom-btn-favorite-hidden").css("color","white");
     console.log(boxOfFacts); 
     localStorage.removeItem(`${keyName}`);
-    var retrievedData = localStorage.getItem(`${keyName}`);
-    console.log(retrievedData);
+    localStorage.removeItem(`${idName}`)
+    //var retrievedData = localStorage.getItem(`${keyName}`);
+    //console.log(retrievedData);
+    
+    
     
 }
-    
-    for(var i = 0; i<localStorage.length;i++){
-        
-        if(localStorage.getItem(`${"animal_"+i}`)==true){
-            $("#"+`${"animal_"+i}`).attr("data-favorite",true);
-        }
-    }
-   
     
     
 })

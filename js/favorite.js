@@ -32,11 +32,56 @@ var mySwiper = myApp.swiper('.swiper-container', {
 
 
 // Code use to control slides and recieve data from the text files. //
-$.get('fact-data/random.txt',function(data){
-    var lines = data.split("~");
-    var arraytest = data.split("~").length;
+ /* data =localStorage.getItem("boxOfFacts")
+
+var favoriteFact = JSON.parse(data)
+   
+$.each(favoriteFact, function(key, value) {
+    var arraytest = key.length
+    var line = value
+*/      var testArray = [];
+
+    
+        
+          for(var i = 0 ; i <= 100 ; i++){ // will change this later
+        
+        if(localStorage.getItem(`${"af_"+i}`)!=undefined){
+         
+              var example = 
+                    "<div class='swiper-slide'>" +
+                            "<span>"+localStorage.getItem(`${"af_"+i}`)+"</span>"+
+                        "</div>";
+           
+        $(".swiper-wrapper").prepend(example);
+            
+        } 
+        
+
+
+    for(var i = 0 ; i <= localStorage.length ; i++){
+        
+        if(localStorage.getItem(`${"af_"+i}`)!=undefined){
+         
+              var example = 
+                    "<div class='swiper-slide'>" +
+                            "<span>"+localStorage.getItem(`${"af_"+i}`)+"</span>"+
+                        "</div>";
+           
+        $(".swiper-wrapper").prepend(example);
+            
+        } 
+        
+        
+        
+        
+}
+     mySwiper.updateContainerSize() 
+    mySwiper.updateSlidesSize() 
+
+
   
-   for(var i = arraytest-1 ; i >= 0 ; i--){
+
+  /* for(var i = arraytest-1 ; i >= 0 ; i--){
    
         var example = 
                     "<div class='swiper-slide'>" +
@@ -45,11 +90,10 @@ $.get('fact-data/random.txt',function(data){
            
         $(".swiper-wrapper").prepend(example);
        
-   }
-    mySwiper.updateContainerSize() 
-    mySwiper.updateSlidesSize() 
+   }*/
+   
     
-});
+
 
 // Code use to control slides and recieve data from the text files. //
 
