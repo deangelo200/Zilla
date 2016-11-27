@@ -12,7 +12,7 @@ var mainView = myApp.addView('.view-main', {
 });
 
 // Callbacks to run specific code for specific pages, for example for About page:
-myApp.onPageInit('about', function (page) {
+myApp.onPageInit('template', function (page) {
     // run createContentPage func after link was clicked
     $$('.create-page').on('click', function () {
         createContentPage();
@@ -49,5 +49,37 @@ function createContentPage() {
     
     
 }
+
+ var mySwiper = myApp.swiper('.swiper-container', {
+  pagination: '.swiper-pagination',
+  paginationHide: false,
+  paginationClickable: true,
+  nextButton: '.fa-forward',
+  prevButton: '.swiper-button-prev',
+  effect:"slide"
+}); 
+
+$.get('fact-data/animal.txt',function(data){
+    var lines = data.split("~");
+    var arraytest = data.split("~").length; 
+  
+   for(var i = arraytest-1  ; i >=0  ; i--){
+       
+      
+        var example = 
+                    `<div class='swiper-slide' id="${'animal_'+i}" data-idnum ="${'af_'+i}"  data-favorite="false">` +
+                            "<span>"+lines[i]+"</span>"+
+                        "</div>";
+ 
+       $(".swiper-wrapper").prepend(example); 
+       //mySwiper.appendSlide(example);
+   }
+     mySwiper.updateContainerSize() 
+     mySwiper.updateSlidesSize()
+      
+    
+});
+
+
 
 
