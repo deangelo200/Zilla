@@ -23,10 +23,6 @@
         <feature name="SocialSharing">
           <param name="android-package" value="nl.xservices.plugins.SocialSharing" />
         </feature>
-         <icon src="icons/android/72.png" gap:density="ldpi" />
-  <icon src="icons/android/160.png" gap:density="mdpi" />
-  <icon src="icons/android/240.png" gap:density="hdpi" />
-  <icon src="icons/android/320.png" gap:density="xhdpi" />
     </platform>
     
     
@@ -35,6 +31,14 @@
         <allow-intent href="itms-apps:*" />
         <preference name="BackupWebStorage" value="none" />
     </platform>
+    
+    <!- Icons -->
+    
+<icon src="icons/android/72.png" gap:density="ldpi" gap:platform="android" />
+  <icon src="icons/android/160.png" gap:density="mdpi" gap:platform="android" />
+  <icon src="icons/android/240.png" gap:density="hdpi" gap:platform="android" />
+  <icon src="icons/android/320.png" gap:density="xhdpi" gap:platform="android" />
+    
     <preference name="DisallowOverscroll" value="true" />
     <plugin name="cordova-plugin-whitelist" spec="~1.2.0" />
     <plugin name="cordova-plugin-console" spec="~1.0.1" />
