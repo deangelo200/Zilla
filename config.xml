@@ -34,10 +34,14 @@
     
     <!- Icons -->
     
-<icon src="icons/android/72.png" gap:density="ldpi" gap:platform="android" />
-  <icon src="icons/android/160.png" gap:density="mdpi" gap:platform="android" />
-  <icon src="icons/android/240.png" gap:density="hdpi" gap:platform="android" />
-  <icon src="icons/android/320.png" gap:density="xhdpi" gap:platform="android" />
+<!-- Define app icon for each platform. -->
+    <icon src="icon.png" />
+    <icon src="icons/android/icon-36-ldpi.png"   gap:platform="android"    gap:qualifier="ldpi" />
+    <icon src="icons/android/icon-48-mdpi.png"   gap:platform="android"    gap:qualifier="mdpi" />
+    <icon src="icons/android/icon-72-hdpi.png"   gap:platform="android"    gap:qualifier="hdpi" />
+    <icon src="icons/android/icon-96-xhdpi.png"  gap:platform="android"    gap:qualifier="xhdpi" />
+    <icon src="icons/android/icon-144-xxhdpi.png"  gap:platform="android"    gap:qualifier="xxhdpi" />
+    <icon src="icons/android/icon-192-xxxhdpi.png"  gap:platform="android"    gap:qualifier="xxxhdpi" />
     
     <preference name="DisallowOverscroll" value="true" />
     <plugin name="cordova-plugin-whitelist" spec="~1.2.0" />
