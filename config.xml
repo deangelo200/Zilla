@@ -23,6 +23,10 @@
         <feature name="SocialSharing">
           <param name="android-package" value="nl.xservices.plugins.SocialSharing" />
         </feature>
+         <icon src="icons/android/72.png" gap:density="ldpi" />
+  <icon src="icons/android/160.png" gap:density="mdpi" />
+  <icon src="icons/android/240.png" gap:density="hdpi" />
+  <icon src="icons/android/320.png" gap:density="xhdpi" />
     </platform>
     
     
@@ -38,12 +42,5 @@
     <plugin name="cordova-plugin-x-socialsharing" />
     <plugin name="com.darktalker.cordova.screenshot" />
     
-
-<platform name="android">
-  <icon src="icons/android/72.png" gap:density="ldpi" />
-  <icon src="icons/android/160.png" gap:density="mdpi" />
-  <icon src="icons/android/240.png" gap:density="hdpi" />
-  <icon src="icons/android/320.png" gap:density="xhdpi" />
-</platform>
     
 </widget>
