@@ -5,9 +5,12 @@ body{
 }
 .colortest{
     
-background: #67B26F; /* fallback for old browsers */
-background: -webkit-linear-gradient(to left, #67B26F , #4ca2cd); /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to left, #67B26F , #4ca2cd); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+background: #ffb347; /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #ffb347 , #ffcc33); /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #ffb347 , #ffcc33); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        
        
         
 }
@@ -28,11 +31,9 @@ h1{
     position: relative;
     top: 30%;
     font-size: 300%;
-    font-weight: 100;
+    font-weight: 300;
     
 }
-
-
 
 
 .btn-full:visited,
@@ -58,10 +59,6 @@ h1{
 
 .btn-full:hover,
 .btn-full:active{
-    width: 52px;
-    height: 22px;
-    text-align: center;
-    font-size: 130%;
     background-color: rgba(255, 255, 255, 0.1);
 }
 
