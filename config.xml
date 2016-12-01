@@ -25,7 +25,7 @@
     <icon src="icons/android/icon-192-xxxhdpi.png"  platform="android" density="xxxhdpi" /> 
     </platform>
     
-    density="xxxhdpi"
+    
     <platform name="android">
         <preference name="android-minSdkVersion" value="14" />
         <allow-intent href="market:*" />
