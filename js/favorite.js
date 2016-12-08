@@ -27,96 +27,37 @@ var mySwiper = myApp.swiper('.swiper-container', {
   paginationClickable: true,
   nextButton: '.fa-forward',
 });    
-// Code use to control properties of the slides \\
 
-
-
-// Code use to control slides and recieve data from the text files. //
- /* data =localStorage.getItem("boxOfFacts")
-
-var favoriteFact = JSON.parse(data)
-   
-$.each(favoriteFact, function(key, value) {
-    var arraytest = key.length
-    var line = value
-*/      var testArray = [];
-
-    $(document).ready(function(){
-        for(var i = 0 ; i <= 100 ; i++){
-        
-        if(localStorage.getItem(`${"af_"+i}`)!=undefined){
-         
-              var example = 
-                    "<div class='swiper-slide'>" +
-                            "<span>"+localStorage.getItem(`${"af_"+i}`)+"</span>"+
-                        "</div>";
-           
-        $(".swiper-wrapper").prepend(example);
-            
-        } 
-    
-}
-     mySwiper.updateContainerSize() 
-    mySwiper.updateSlidesSize() 
-    })
-
-    
-
-
-  
-
-  /* for(var i = arraytest-1 ; i >= 0 ; i--){
-   
+function localFact()
+{
+    for(var i = 0; i<=100; i++)
+    {
+     
+        if(localStorage.getItem(`${"animal_fact_"+i}`)!=undefined)
+        {
         var example = 
                     "<div class='swiper-slide'>" +
-                            "<span>"+lines[i]+"</span>"+
-                        "</div>";
-           
-        $(".swiper-wrapper").prepend(example);
-       
-   }*/
+                    "<span>"+localStorage.getItem(`${"animal_fact_"+i}`)+"</span>"+
+                    "</div>";    
+            $(".swiper-wrapper").prepend(example);
+        }
+    }
    
-    
-
-
-// Code use to control slides and recieve data from the text files. //
-
-//opening the panels
- $$('.open-left-panel').on('click', function (e) {
-        // 'left' position to open Left panel
-        myApp.openPanel('left');
-        mySwiper.lockSwipes();
-    });
-
-// closing the panels
-  $$('.panel-close').on('click', function (e) {
-    myApp.closePanel();
-    mySwiper.unlockSwipes();
-    });
-
-
-function copyToClipboard(element) {
-  var $temp = $("<input>");
-  $("body").append($temp);
-  $temp.val($(element).text()).select();
-  document.execCommand("copy");
-  $temp.remove();
+    mySwiper.updateContainerSize() 
+    mySwiper.updateSlidesSize()
 }
 
-$(".fa-files-o").click(function(){
-    copyToClipboard(".swiper-slide-active");
-    $(".text-copied").fadeIn(500).fadeOut(2000);
-    
-});
- 
 
-mySwiper.on('slideChangeEnd',function(){
-    $("#bottom-btn-copy-hidden").fadeIn(100);
-    $("#bottom-btn-forward-hidden").fadeIn(100);
-    $("#bottom-btn-favorite-hidden").fadeIn(100);
-    $("#bottom-btn-share-hidden").fadeIn(100);
-    
+$(document).ready(function()
+{
+  
+    localFact();
+     
 })
+
+    
+
+
 
 
    
