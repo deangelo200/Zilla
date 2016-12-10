@@ -1,6 +1,6 @@
 
 .picture-background{
-background-image:linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url("../img/fact-img/africa2.jpg");
+background-image:linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url("../img/fact-img/company2.jpg");
 background-position:center;
 background-size:cover;
 }
@@ -9,12 +9,12 @@ background-size:cover;
 
 
 .main-home-nav{
-   background-color:rgba(211, 84, 0, 0.5);
+   background-color:rgba(74, 20, 140, 0.5);
 }
 
 .main-home-nav:after,
 .main-home-nav:before{
-    background-color:rgba(211, 84, 0, 0.5);
+    background-color:rgba(74, 20, 140, 0.5);
 }
 
 
