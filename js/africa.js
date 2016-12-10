@@ -18,7 +18,7 @@ $$(document).on('deviceready', function() {
    
     $("#talktext").click(function(){
       
-       var speak = $(".swiper-slide-active").text;
+       var speak = $(".swiper-slide-active").text();
         
  window.TTS.speak({
         text: speak,
