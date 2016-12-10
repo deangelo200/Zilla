@@ -13,25 +13,7 @@ var mainView = myApp.addView('.view-main', {
     dynamicNavbar: true
 });
 
-// Handle Cordova Device Ready Event
-$$(document).on('deviceready', function() {
-   
-    $("#talktext").click(function(){
-      
-       var speak = $(".swiper-slide-active").text();
-        
- window.TTS.speak({
-        text: speak,
-        locale: 'en-GB',
-        rate: 1.3
-    }, function () {
-        // Do Something after success
-    }, function (reason) {
-        // Handle the error case
-    });
-    }); 
-});
-    
+
     
  
 

@@ -1,0 +1,32 @@
+@media (min-width:320px)
+{
+    .mic{
+       font-size: 36px; 
+    }
+}
+@media (min-width:480px)  {
+    .fa-microphone{
+       right: 5%; 
+    }
+}
+@media (min-width:600px) 
+{ 
+    .fa-microphone{
+       right: 5%; 
+    }
+}
+@media (min-width:801px) 
+{
+    .fa-microphone{
+       right: 5%; 
+    }
+}
+@media (min-width:1025px) {
+    
+    .fa-microphone{
+       right: 3%; 
+    }
+    
+}
+@media (min-width:1281px) { /* hi-res laptops and desktops */ }
+

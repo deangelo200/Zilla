@@ -210,4 +210,15 @@ span{
 }
 
 
+.mic{
+    font-size: 30px;
+}
+.fa-microphone{
+    position: absolute;
+    bottom: 10%;
+    right: 10%;
+    color: white;
+    
+}
+
  
