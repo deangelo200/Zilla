@@ -187,7 +187,11 @@ mySwiper.on('slideChangeEnd',function(){
 // Handle Cordova Device Ready Event
 $$(document).on('deviceready', function() {
    
-    $(".work").click(function(){
+    
+   
+});
+
+ $(".work").click(function(){
       
        var speak = $(".swiper-slide-active").text();
         
@@ -201,7 +205,5 @@ $$(document).on('deviceready', function() {
         // Handle the error case
     });
     }); 
-});
-        
     
     
