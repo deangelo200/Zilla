@@ -18,11 +18,12 @@ $$(document).on('deviceready', function() {
    
     $("#talktext").click(function(){
         
-        .speak('Cordova Plugin SpeechSynthesisUtterance Test', function () {
+    .speak('hello, world!', function () {
         alert('success');
-        }, function (reason) {
+    }, function (reason) {
         alert(reason);
-        });
+    });
+
     })
     
     
