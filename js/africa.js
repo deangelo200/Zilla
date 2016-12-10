@@ -18,16 +18,20 @@ $$(document).on('deviceready', function() {
    
     $("#talktext").click(function(){
         
-    .speak('hello, world!', function () {
-        alert('success');
+ window.TTS.speak({
+        text: 'hello world!!',
+        locale: 'en-GB',
+        rate: 1.3
+    }, function () {
+        // Do Something after success
     }, function (reason) {
-        alert(reason);
+        // Handle the error case
     });
-
-    })
-    
-    
+    }); 
 });
+    
+    
+ 
 
 // Callbacks to run specific code for specific pages, for example for About page:
 myApp.onPageInit('about', function (page) {
