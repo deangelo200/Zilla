@@ -57,7 +57,7 @@ var menuBar =
                           '<img class="menu-icon" src="img/menu/rocket.png">'+
                            '<a href="favorite.html" class="external">Univers</a>'+
                         '</li>'
-var microphone = '<div class="mic"><i class="fa fa-microphone microphone-speak" aria-hidden="true"></i></div>'
+var microphone = '<div class="mic"><i class="fa fa-microphone" id="microphone-speak" aria-hidden="true"></i></div>'
 $(".side-menu").append(menuBar);
 $(".page-content").prepend(microphone);
    
@@ -187,7 +187,7 @@ mySwiper.on('slideChangeEnd',function(){
 // Handle Cordova Device Ready Event
 $$(document).on('deviceready', function() {
    
-    $(".microphone-speak").click(function(){
+    $("#microphone-speak").click(function(){
       
        var speak = $(".swiper-slide-active").text();
         
