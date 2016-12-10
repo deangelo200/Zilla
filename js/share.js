@@ -187,7 +187,7 @@ mySwiper.on('slideChangeEnd',function(){
 // Handle Cordova Device Ready Event
 $$(document).on('deviceready', function() {
    
-    $(".microphone-speak").click(function(){
+    $(".fa.fa-microphone").click(function(){
       
        var speak = $(".swiper-slide-active").text();
         
