@@ -15,7 +15,17 @@ var mainView = myApp.addView('.view-main', {
 
 // Handle Cordova Device Ready Event
 $$(document).on('deviceready', function() {
-    alert("Device is ready!");
+   
+    $("#talktext").click(function(){
+        
+        .speak('Cordova Plugin SpeechSynthesisUtterance Test', function () {
+        alert('success');
+        }, function (reason) {
+        alert(reason);
+        });
+    })
+    
+    
 });
 
 // Callbacks to run specific code for specific pages, for example for About page:
