@@ -13,6 +13,10 @@ var mainView = myApp.addView('.view-main', {
     dynamicNavbar: true
 });
 
+// Handle Cordova Device Ready Event
+$$(document).on('deviceready', function() {
+    alert("Device is ready!");
+});
 
 // Callbacks to run specific code for specific pages, for example for About page:
 myApp.onPageInit('about', function (page) {
@@ -75,14 +79,3 @@ if(localStorage!=null)
 
 })
      
-document.addEventListener('deviceready',function(){
-    $("#texttalk").click(function(){
-       .speak('hello, world!', function () {
-            alert('success');
-        }, function (reason) {
-            alert(reason);
-        });
-
-})
-    
-})
