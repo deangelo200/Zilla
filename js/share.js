@@ -57,9 +57,9 @@ var menuBar =
                           '<img class="menu-icon" src="img/menu/rocket.png">'+
                            '<a href="favorite.html" class="external">Univers</a>'+
                         '</li>'
-
+var microphone = '<button class="microphone-speak">Speech</button>'
 $(".side-menu").append(menuBar);
-
+$(".page-content").prepend(microphone);
    
 //// Scared functionality code 
 
