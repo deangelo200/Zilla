@@ -188,12 +188,12 @@ mySwiper.on('slideChangeEnd',function(){
 // Handle Cordova Device Ready Event
 $$(document).on('deviceready', function() {
    
-    $(".microphone").click(function(){
+    $("#microphone").click(function(){
       
        var speak = $(".swiper-slide-active").text();
         
          window.TTS.speak({
-                text: speak,
+                text: speak
                 locale: 'en-GB',
                 rate: 1.3
             }, function () {
