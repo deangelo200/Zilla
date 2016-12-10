@@ -28,16 +28,16 @@ var mySwiper = myApp.swiper('.swiper-container', {
   nextButton: '.fa-forward',
 });    
 
-function localFact()
+function localFact(animal_fact_)
 {
     for(var i = 0; i<=100; i++)
     {
      
-        if(localStorage.getItem(`${"animal_fact_"+i}`)!=undefined)
+        if(localStorage.getItem(`${animal_fact_+i}`)!=undefined)
         {
         var example = 
                     "<div class='swiper-slide'>" +
-                    "<span>"+localStorage.getItem(`${"animal_fact_"+i}`)+"</span>"+
+                    "<span>"+localStorage.getItem(`${animal_fact_+i}`)+"</span>"+
                     "</div>";    
             $(".swiper-wrapper").prepend(example);
         }
@@ -51,7 +51,8 @@ function localFact()
 $(document).ready(function()
 {
   
-    localFact();
+    localFact("animal_fact_");
+    localFact("africa_fact_");
      
 })
 

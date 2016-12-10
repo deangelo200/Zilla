@@ -25,8 +25,8 @@ var menuBar =
                            '<a href="body.html" class="external">Body</a>'+
                         '</li>'+
                          '<li class="side-menu-item">'+
-                          '<img class="menu-icon" src="img/menu/flag.png">'+
-                           '<a href="favorite.html" class="external">Country</a>'+
+                          '<img class="menu-icon" src="img/menu/company.png">'+
+                           '<a href="companies.html" class="external">Companies</a>'+
                         '</li>'+
                          '<li class="side-menu-item">'+
                           '<img class="menu-icon" src="img/menu/planet-earth.png">'+

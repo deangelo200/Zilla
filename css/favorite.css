@@ -2,7 +2,7 @@
 
 .picture-background{
     
-    background-image:linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)),url(../img/favorite/favorite.jpg);
+    background-image:linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)),url(../img/fact-img/favorite.jpg);
     background-position: center;
     background-size: cover;
 }

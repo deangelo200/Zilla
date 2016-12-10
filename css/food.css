@@ -1,6 +1,6 @@
 
 .picture-background{
-background-image:linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)),url("../img/food/food.jpeg");
+background-image:linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)),url("../img/fact-img/food.jpeg");
 background-position:center;
 background-size:cover;
 }
