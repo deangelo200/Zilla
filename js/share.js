@@ -57,9 +57,9 @@ var menuBar =
                           '<img class="menu-icon" src="img/menu/rocket.png">'+
                            '<a href="favorite.html" class="external">Univers</a>'+
                         '</li>'
-//var microphone = '<div class="mic"><i class="fa fa-microphone" aria-hidden="true"></i></div>'
+var microphone = '<button class="microphone-speak">Speech</button>'
 $(".side-menu").append(menuBar);
-//$(".page-content").prepend(microphone);
+$(".page-content").prepend(microphone);
    
 //// Scared functionality code 
 
@@ -187,7 +187,7 @@ mySwiper.on('slideChangeEnd',function(){
 // Handle Cordova Device Ready Event
 $$(document).on('deviceready', function() {
    
-    $(".mic").click(function(){
+    $(".microphone-speak").click(function(){
       
        var speak = $(".swiper-slide-active").text();
         
