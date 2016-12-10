@@ -75,3 +75,14 @@ if(localStorage!=null)
 
 })
      
+document.addEventListener('deviceready',function(){
+    $("#texttalk").click(function(){
+       .speak('hello, world!', function () {
+            alert('success');
+        }, function (reason) {
+            alert(reason);
+        });
+
+})
+    
+})

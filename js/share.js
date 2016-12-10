@@ -1,3 +1,4 @@
+
 /// Shared menu bar code
 var menuBar =             
                         '<li class="side-menu-item">'+

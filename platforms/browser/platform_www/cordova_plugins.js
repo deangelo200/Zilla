@@ -23,6 +23,14 @@ module.exports = [
         "merges": [
             "navigator.screenshot"
         ]
+    },
+    {
+        "file": "plugins/cordova-plugin-tts/www/tts.js",
+        "id": "cordova-plugin-tts.tts",
+        "pluginId": "cordova-plugin-tts",
+        "clobbers": [
+            "TTS"
+        ]
     }
 ];
 module.exports.metadata = 
@@ -32,7 +40,8 @@ module.exports.metadata =
     "cordova-plugin-console": "1.0.4",
     "cordova-plugin-statusbar": "1.0.1",
     "cordova-plugin-x-socialsharing": "5.1.3",
-    "com.darktalker.cordova.screenshot": "0.1.5"
+    "com.darktalker.cordova.screenshot": "0.1.5",
+    "cordova-plugin-tts": "0.2.3"
 }
 // BOTTOM OF METADATA
 });

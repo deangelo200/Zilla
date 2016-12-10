@@ -1,6 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="com.phonegap.helloworld" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    
     <feature name="StatusBar">
         <param name="android-package" value="org.apache.cordova.statusbar.StatusBar" />
         <param name="onload" value="true" />
@@ -15,7 +14,11 @@
     <feature name="Screenshot">
         <param name="android-package" value="com.darktalker.cordova.screenshot.Screenshot" />
     </feature>
-    <name>Zilla</name>
+    <feature name="TTS">
+        <param name="android-package" value="com.wordsbaking.cordova.tts.TTS" />
+        <param name="onload" value="true" />
+    </feature>
+    <name>Factzilla</name>
     <description>
         A basic Framework7 template for PhoneGap.
     </description>
@@ -30,6 +33,12 @@
     <allow-intent href="sms:*" />
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
+    <icon density="ldpi" platform="android" src="icons/android/icon-36-ldpi.png" />
+    <icon density="mdpi" platform="android" src="icons/android/icon-48-mdpi.png" />
+    <icon density="hdpi" platform="android" src="icons/android/icon-72-hdpi.png" />
+    <icon density="xhdpi" platform="android" src="icons/android/icon-96-xhdpi.png" />
+    <icon density="xxhdpi" platform="android" src="icons/android/icon-144-xxhdpi.png" />
+    <icon density="xxxhdpi" platform="android" src="icons/android/icon-192-xxxhdpi.png" />
     <allow-intent href="market:*" />
     <preference name="loglevel" value="DEBUG" />
     <preference name="DisallowOverscroll" value="true" />
