@@ -17,9 +17,11 @@ var mainView = myApp.addView('.view-main', {
 $$(document).on('deviceready', function() {
    
     $("#talktext").click(function(){
+      
+       var speak = $(".swiper-slide-active").text;
         
  window.TTS.speak({
-        text: 'hello world!!',
+        text: speak,
         locale: 'en-GB',
         rate: 1.3
     }, function () {
