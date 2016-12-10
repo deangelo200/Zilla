@@ -1,5 +1,4 @@
 
-
 /// Shared menu bar code
 var menuBar =             
                         '<li class="side-menu-item">'+
@@ -58,9 +57,9 @@ var menuBar =
                           '<img class="menu-icon" src="img/menu/rocket.png">'+
                            '<a href="favorite.html" class="external">Univers</a>'+
                         '</li>'
-
+var microphone = '<div class="mic"><i class="fa fa-microphone" id="mircophone" aria-hidden="true"></i></div>'
 $(".side-menu").append(menuBar);
-
+$(".page-content").append(microphone);
    
 //// Scared functionality code 
 
@@ -192,17 +191,17 @@ $$(document).on('deviceready', function() {
       
        var speak = $(".swiper-slide-active").text();
         
-         window.TTS.speak({
-                text: speak
-                locale: 'en-GB',
-                rate: 1.3
-            }, function () {
-                // Do Something after success
-            }, function (reason) {
-                // Handle the error case
-            });
-            }); 
-        });
-
+ window.TTS.speak({
+        text: speak,
+        locale: 'en-GB',
+        rate: 1.3
+    }, function () {
+        // Do Something after success
+    }, function (reason) {
+        // Handle the error case
+    });
+    }); 
+});
+        
     
     
