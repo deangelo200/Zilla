@@ -59,7 +59,10 @@ var menuBar =
                         '</li>'
 
 $(".side-menu").append(menuBar);
-//$(".page-content").prepend(microphone);
+var microphone = '<div class="right">'+
+                    '<i class="fa fa-microphone fa-2x" aria-hidden="true" id="text-to-speak"></i>'+
+                  '</div>'
+$(".navbar-inner").prepend(microphone);
    
 //// Scared functionality code 
 
