@@ -57,9 +57,9 @@ var menuBar =
                           '<img class="menu-icon" src="img/menu/rocket.png">'+
                            '<a href="favorite.html" class="external">Univers</a>'+
                         '</li>'
-var microphone = '<button class="microphone-speak">Speech</button>'
+
 $(".side-menu").append(menuBar);
-$(".page-content").prepend(microphone);
+//$(".page-content").prepend(microphone);
    
 //// Scared functionality code 
 
@@ -185,25 +185,27 @@ mySwiper.on('slideChangeEnd',function(){
 })
 
 // Handle Cordova Device Ready Event
-$$(document).on('deviceready', function() {
-   
-    
-   
-});
 
- $(".work").click(function(){
-      
-       var speak = $(".swiper-slide-active").text();
-        
- window.TTS.speak({
-        text: speak,
-        locale: 'en-GB',
-        rate: 1.3
-    }, function () {
-        // Do Something after success
-    }, function (reason) {
-        // Handle the error case
-    });
-    }); 
+
+ function text_to_speak(){
+       alert("Hi");
+     $$(document).on('deviceready', function() {
+        var speak = $(".swiper-slide-active").text();
+         window.TTS.speak({
+                text: speak,
+                locale: 'en-GB',
+                rate: 1.3
+            }, function () {
+                // Do Something after success
+            }, function (reason) {
+                // Handle the error case
+            });
+            }); 
+     
+ }
     
+ 
+
+     
+       
     

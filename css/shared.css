@@ -209,16 +209,17 @@ span{
     left: 6px;
 }
 
-
-.mic{
-    font-size: 30px;
+.microphone-box{
+    widows: 50px;
+    height: 50px;
 }
 
-.fa-microphone{
+.microphone-read-text{
     position: absolute;
     bottom: 10%;
     right: 10%;
-    color: white;
+    width: inherit;
+    height: inherit;
     
 }
 
