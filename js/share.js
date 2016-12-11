@@ -29,6 +29,10 @@ var menuBar =
                           '<img class="menu-icon" src="img/menu/company.png">'+
                            '<a href="companies.html" class="external">Companies</a>'+
                         '</li>'+
+                        '<li class="side-menu-item">'+
+                          '<img class="menu-icon" src="img/menu/weed.png">'+
+                           '<a href="drug.html" class="external">Drug</a>'+
+                        '</li>'+
                          '<li class="side-menu-item">'+
                           '<img class="menu-icon" src="img/menu/planet-earth.png">'+
                            '<a href="favorite.html" class="external">Earth</a>'+
