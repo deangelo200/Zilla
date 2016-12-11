@@ -46,7 +46,12 @@
                         <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
                     </a>
                 </div>
-                <div class="center" style="color:white">Food Fact</div>
+                
+                <div class="center" style="color:white">Food Fact
+                  </div>
+                  <div class="right">
+                    <i class="fa fa-microphone fa-2x" aria-hidden="true" id="text-to-speak"></i>
+                  </div>
               </div>
               
             </div>
@@ -69,14 +74,15 @@
                    <i class="fa fa-files-o fa-lg hvr-icon-pop" id="bottom-btn-copy-hidden" aria-hidden="true"></i>
                     <i class="fa fa-forward fa-lg hvr-icon-pop" id="bottom-btn-forward-hidden"  aria-hidden="true"></i>
                     <i class="fa fa-heart fa-lg hvr-icon-pop" id="bottom-btn-favorite-hidden"  aria-hidden="true" onclick="favoriteFact()"></i>
-                    <i class="fa fa-share-alt fa-lg hvr-icon-pop" id="bottom-btn-share-hidden" aria-hidden="true" onclick="text_to_speak()" ></i>
+                    <i class="fa fa-share-alt fa-lg hvr-icon-pop" id="bottom-btn-share-hidden" aria-hidden="true" onclick="shareFact()" ></i>
                 
               </div>
             </div>
  
             <!-- Scrollable page content -->
             <div class="page-content picture-background">
-                 <div class="microphone-box"><img src="img/menu/mic.png" class="microphone-read-text" onclick="text_to_speak()"></div>
+                
+              
                   <p class="text-copied">Text Copied</p>
                    <div class="swiper-custom">
                     <div class="swiper-container"> 

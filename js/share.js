@@ -188,7 +188,6 @@ mySwiper.on('slideChangeEnd',function(){
 
 
  function text_to_speak(){
-       alert("Hi");
      $$(document).on('deviceready', function() {
         var speak = $(".swiper-slide-active").text();
          window.TTS.speak({
@@ -206,6 +205,8 @@ mySwiper.on('slideChangeEnd',function(){
     
  
 
-     
+$("#text-to-speak").click(function(){
+    text_to_speak();
+})
        
     
