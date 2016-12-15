@@ -26,6 +26,7 @@ myApp.onPageInit('about', function (page) {
 var mySwiper = myApp.swiper('.swiper-container', {
   pagination: '.swiper-pagination',
   paginationHide: false,
+    fastClicks:false,
   paginationClickable: true,
   nextButton: '.fa-forward',
   prevButton: '.swiper-button-prev',
