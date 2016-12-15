@@ -53,6 +53,7 @@ function createContentPage() {
  var mySwiper = myApp.swiper('.swiper-container', {
   pagination: '.swiper-pagination',
   paginationHide: false,
+    fastClicks:true,
   paginationClickable: true,
   nextButton: '.fa-forward',
   prevButton: '.swiper-button-prev',
