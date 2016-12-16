@@ -1,4 +1,5 @@
 
+
 /// Shared menu bar code
 var menuBar =             
                         '<li class="side-menu-item">'+
@@ -67,6 +68,13 @@ var microphone = '<div class="right">'+
                     '<i class="fa fa-microphone fa-2x" aria-hidden="true" id="text-to-speak"></i>'+
                   '</div>'
 $(".navbar-inner").prepend(microphone);
+
+var bottombar = '<i class="fa fa-files-o fa-2x" id="bottom-btn-copy-hidden" aria-hidden="true"></i>'+
+                    '<i class="fa fa-forward fa-2x " id="bottom-btn-forward-hidden"  aria-hidden="true"></i>'+
+                    '<i class="fa fa-heart fa-2x" id="bottom-btn-favorite-hidden"  aria-hidden="true" onclick="favoriteFact()"></i>'+
+                    '<i class="fa fa-share-alt fa-2x" id="bottom-btn-share-hidden" aria-hidden="true" onclick="shareFact()" ></i>'
+
+$(".toolbar-inner").prepend(bottombar);
    
 //// Scared functionality code 
 

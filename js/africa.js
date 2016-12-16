@@ -14,16 +14,6 @@ var mainView = myApp.addView('.view-main', {
 });
 
 
-    
- 
-
-// Callbacks to run specific code for specific pages, for example for About page:
-myApp.onPageInit('about', function (page) {
-    // run createContentPage func after link was clicked
-    $$('.create-page').on('click', function () {
-        createContentPage();
-    });
-});
 
 
 var mySwiper = myApp.swiper('.swiper-container', {
@@ -32,7 +22,8 @@ var mySwiper = myApp.swiper('.swiper-container', {
   paginationClickable: true,
   nextButton: '.fa-forward',
   prevButton: '.swiper-button-prev',
-  effect:"slide"
+  effect:"slide",
+fastClicks:true
 }); 
 
  $.get('fact-data/africa.txt',function(data){

@@ -29,7 +29,8 @@ var mySwiper = myApp.swiper('.swiper-container', {
   paginationClickable: true,
   nextButton: '.fa-forward',
   prevButton: '.swiper-button-prev',
-  effect:"slide"
+  effect:"slide",
+    fastClicks:true
 }); 
 
  $.get('fact-data/animal.txt',function(data){

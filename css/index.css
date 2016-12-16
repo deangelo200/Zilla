@@ -1,7 +1,8 @@
 
 body{
-    font-family: 'Lato';
+     font-family: 'Lato', sans-serif;
     font-size: 14px;
+    text-rendering: optimizeLegibility;
 }
 .colortest{
     
