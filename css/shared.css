@@ -107,29 +107,18 @@ span{
      top: -5px;
 }
 
-#bottom-btn-copy-hidden{
+#bottom-btn-copy-hidden,
+#bottom-btn-forward-hidden,
+#bottom-btn-favorite-hidden,
+#bottom-btn-share-hidden,
+.fa-microphone
+{
     color:#fff;
     margin: 20px;
     display: none;
 }
 
 
-#bottom-btn-forward-hidden{
-    color:#fff;
-    margin: 20px;
-    display: none;
-}
-#bottom-btn-favorite-hidden{
-    color:#fff;
-    margin: 20px;
-    display: none;
-}
-#bottom-btn-share-hidden{
-    color:#fff;
-    margin: 20px;
-    display: none;
-   
-}
 /*text-copied*/
 .text-copied{
     font-size: 1em;

@@ -1,0 +1,29 @@
+
+.picture-background{
+background-image:linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)),url("../img/fact-img/china2.jpg");
+background-position:center;
+background-size:cover;
+}
+
+
+
+
+.main-home-nav{
+
+
+background: #cb2d3e; /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #cb2d3e , #ef473a); /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, rgba(203, 45, 62, 0.7) , rgba(239, 71, 58, 0.7)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        
+        
+}
+
+.main-home-nav:after,
+.main-home-nav:before{
+
+background: #cb2d3e; /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #cb2d3e , #ef473a); /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, rgba(203, 45, 62, 0.7) , rgba(239, 71, 58, 0.7)); //* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        
+}
+

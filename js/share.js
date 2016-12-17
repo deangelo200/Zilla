@@ -14,6 +14,10 @@ var menuBar =
                             '<img class="menu-icon" src="img/menu/penguin.png">'+
                            '<a href="antarctica.html" class="external">Antarcita</a>'+
                         '</li>'+
+                           '<li class="side-menu-item">'+
+                          '<img class="menu-icon" src="img/menu/asia.png">'+
+                           '<a href="asia.html" class="external">Asia</a>'+
+                        '</li>'+
                          '<li class="side-menu-item">'+
                           '<img class="menu-icon" src="img/menu/animal.png">'+
                            '<a href="animal.html" class="external">Animal</a>'+
@@ -25,7 +29,7 @@ var menuBar =
                          '<li class="side-menu-item">'+
                           '<img class="menu-icon" src="img/menu/heart.png">'+
                            '<a href="body.html" class="external">Body</a>'+
-                        '</li>'+
+                        '</li>'+ 
                          '<li class="side-menu-item">'+
                           '<img class="menu-icon" src="img/menu/company.png">'+
                            '<a href="companies.html" class="external">Companies</a>'+
@@ -51,6 +55,10 @@ var menuBar =
                            '<a href="random.html" class="external">Random</a>'+
                         '</li>'+
                          '<li class="side-menu-item">'+
+                          '<img class="menu-icon" src="img/menu/devices.png">'+
+                           '<a href="technology.html" class="external">Technology</a>'+
+                        '</li>'+
+                        '<li class="side-menu-item">'+
                           '<img class="menu-icon" src="img/menu/flask.png">'+
                            '<a href="favorite.html" class="external">Science</a>'+
                         '</li>'+
@@ -65,7 +73,7 @@ var menuBar =
 
 $(".side-menu").append(menuBar);
 var microphone = '<div class="right">'+
-                    '<i class="fa fa-microphone fa-2x" aria-hidden="true" id="text-to-speak"></i>'+
+                    '<i class="fa fa-microphone fa-2x" aria-hidden="true" id="text-to-speak" style="display:none"></i>'+
                   '</div>'
 $(".navbar-inner").prepend(microphone);
 
@@ -196,11 +204,15 @@ mySwiper.on('slideChangeEnd',function(){
     $("#bottom-btn-forward-hidden").fadeIn(100);
     $("#bottom-btn-favorite-hidden").fadeIn(100);
     $("#bottom-btn-share-hidden").fadeIn(100);
+    $(".fa-microphone").fadeIn(100);
     
 })
 
 // Handle Cordova Device Ready Event
 
+  $("#bottom-btn-forward-hidden").click(function(){
+      mySwiper.slideNext();
+  });
 
  function text_to_speak(){
      $$(document).on('deviceready', function() {
