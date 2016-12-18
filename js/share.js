@@ -221,7 +221,7 @@ mySwiper.on('slideChangeEnd',function(){
  function text_to_speak(){
         var speak = $(".swiper-slide-active").text();
           TTS
-        .speak('hello, world!', function () {
+        .speak(speak, function () {
             alert('success');
         }, function (reason) {
             alert(reason);
