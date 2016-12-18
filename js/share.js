@@ -222,9 +222,9 @@ mySwiper.on('slideChangeEnd',function(){
         var speak = $(".swiper-slide-active").text();
           TTS
         .speak(speak, function () {
-            alert('success');
+            /// alert('success');
         }, function (reason) {
-            alert(reason);
+            
         });
              
      
