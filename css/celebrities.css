@@ -1,0 +1,20 @@
+
+.picture-background{
+background-image:linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url("../img/fact-img/celebrities.jpg");
+background-position:center;
+background-size:cover;
+}
+
+
+
+
+.main-home-nav{
+   background-color:rgba(62, 39, 35, 0.9);
+}
+
+.main-home-nav:after,
+.main-home-nav:before{
+    background-color:rgba(62, 39, 35, 0.9);
+}
+
+

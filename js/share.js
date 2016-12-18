@@ -29,6 +29,10 @@ var menuBar =
                          '<li class="side-menu-item">'+
                           '<img class="menu-icon" src="img/menu/heart.png">'+
                            '<a href="body.html" class="external">Body</a>'+
+                        '</li>'+
+                        '<li class="side-menu-item">'+
+                          '<img class="menu-icon" src="img/menu/celebrities.png">'+
+                           '<a href="celebrities.html" class="external">Celebrity</a>'+
                         '</li>'+ 
                          '<li class="side-menu-item">'+
                           '<img class="menu-icon" src="img/menu/company.png">'+
@@ -60,7 +64,7 @@ var menuBar =
                         '</li>'+
                         '<li class="side-menu-item">'+
                           '<img class="menu-icon" src="img/menu/flask.png">'+
-                           '<a href="favorite.html" class="external">Science</a>'+
+                           '<a href="science.html" class="external">Science</a>'+
                         '</li>'+
                          '<li class="side-menu-item">'+
                           '<img class="menu-icon" src="img/menu/team.png">'+
