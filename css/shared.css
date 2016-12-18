@@ -111,13 +111,17 @@ span{
 #bottom-btn-forward-hidden,
 #bottom-btn-favorite-hidden,
 #bottom-btn-share-hidden,
-.fa-microphone
+.fa-forward
+
 {
     color:#fff;
     margin: 20px;
     display: none;
 }
 
+.fa-forward{
+    margin: 30px;
+}
 
 /*text-copied*/
 .text-copied{

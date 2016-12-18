@@ -79,7 +79,7 @@ $(".side-menu").append(menuBar);
 var microphone = '<div class="right">'+
                     '<i class="fa fa-microphone fa-2x" aria-hidden="true" id="text-to-speak" style="display:none" onclick="text_to_speak()"></i>'+
                   '</div>'
-$(".navbar-inner").prepend(microphone);
+//$(".navbar-inner").append(microphone);
 
 var bottombar = '<i class="fa fa-files-o fa-2x" id="bottom-btn-copy-hidden" aria-hidden="true"></i>'+
                     '<i class="fa fa-forward fa-2x " id="bottom-btn-forward-hidden"  aria-hidden="true"></i>'+
@@ -220,11 +220,12 @@ mySwiper.on('slideChangeEnd',function(){
 
  function text_to_speak(){
         var speak = $(".swiper-slide-active").text();
-         window.TTS.speak({
-                text: speak,
-                locale: 'en-GB',
-                rate: 1.3
-            });
+          TTS
+        .speak('hello, world!', function () {
+            alert('success');
+        }, function (reason) {
+            alert(reason);
+        });
              
      
  }
