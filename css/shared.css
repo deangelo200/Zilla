@@ -110,8 +110,7 @@ span{
 #bottom-btn-copy-hidden,
 #bottom-btn-forward-hidden,
 #bottom-btn-favorite-hidden,
-#bottom-btn-share-hidden,
-.fa-forward
+#bottom-btn-share-hidden
 
 {
     color:#fff;
@@ -202,5 +201,7 @@ span{
     top: 2px;
     left: 6px;
 }
+
+
 
 

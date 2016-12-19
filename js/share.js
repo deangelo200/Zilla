@@ -76,10 +76,7 @@ var menuBar =
                         '</li>'
 
 $(".side-menu").append(menuBar);
-var microphone = '<div class="right">'+
-                    '<i class="fa fa-microphone fa-2x" aria-hidden="true" id="text-to-speak" style="display:none" onclick="text_to_speak()"></i>'+
-                  '</div>'
-//$(".navbar-inner").append(microphone);
+
 
 var bottombar = '<i class="fa fa-files-o fa-2x" id="bottom-btn-copy-hidden" aria-hidden="true"></i>'+
                     '<i class="fa fa-forward fa-2x " id="bottom-btn-forward-hidden"  aria-hidden="true"></i>'+
@@ -109,12 +106,16 @@ $(".toolbar-inner").prepend(bottombar);
 ///  Share fact to social media   
 function shareFact(){
     var imageLink;
+        console.log("Calling from CapturePhoto");
         navigator.screenshot.save(function(error, res){
             if(error){
                 console.log(error);
             }else{
+                $(".sharing").fadeIn(500).fadeOut(3000);
+                console.log('ok',res.filePath);
+                imageLink = res.filePath;
+                window.plugins.socialsharing.share(null,null, 'file://'+imageLink, null);
                 
-                window.plugins.socialsharing.share("Hi",null, null, null);
                 
             }
         }, 'jpg',100,'myScreenShot');
@@ -136,7 +137,7 @@ function copyToClipboard(element) {
 
 $(".fa-files-o").click(function(){
     copyToClipboard(".swiper-slide-active");
-    $(".text-copied").fadeIn(500).fadeOut(2000);
+    $(".text-copied").fadeIn(500).fadeOut(3000);
     
 });
 
@@ -206,7 +207,7 @@ mySwiper.on('slideChangeEnd',function(){
     $("#bottom-btn-forward-hidden").fadeIn(100);
     $("#bottom-btn-favorite-hidden").fadeIn(100);
     $("#bottom-btn-share-hidden").fadeIn(100);
-    $(".fa-microphone").fadeIn(100);
+    $(".fa-microphone").css("opacity","1");
     
 })
 
