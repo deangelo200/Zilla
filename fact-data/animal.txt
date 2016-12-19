@@ -322,10 +322,12 @@ A crocodile can't move its tongue and cannot chew. Its digestive juices are so s
 
 Humans and dolphins are the only species that have sex for pleasure.
 
-A cockroach will live for weeks without its head before it starves to death
+A cockroach will live for weeks without its head before it starves to death~
 
-Slugs have 4 noses.
-Owls are the only birds who can see the colour blue.
+Slugs have 4 noses.~
+
+Owls are the only birds who can see the colour blue.~
+
 
 
 
