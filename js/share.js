@@ -109,14 +109,12 @@ $(".toolbar-inner").prepend(bottombar);
 ///  Share fact to social media   
 function shareFact(){
     var imageLink;
-        console.log("Calling from CapturePhoto");
         navigator.screenshot.save(function(error, res){
             if(error){
                 console.log(error);
             }else{
-                console.log('ok',res.filePath);
-                imageLink = res.filePath;
-                window.plugins.socialsharing.share(null,null, 'file://'+imageLink, null);
+                
+                window.plugins.socialsharing.share("Hi",null, null, null);
                 
             }
         }, 'jpg',100,'myScreenShot');
