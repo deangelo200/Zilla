@@ -2,7 +2,7 @@
 
 .picture-background{
     
-    background-image:linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url(../img/1.jpg);
+    background-image:linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)),url(../img/fact-img/r4.jpeg);
     background-position: center;
     background-size: cover;
 }
@@ -10,12 +10,12 @@
 
 
 .main-home-nav{
-   background-color: rgba(39, 161, 197, 0.5);
+   background-color: #212121;
 }
 
 .main-home-nav:after,
 .main-home-nav:before{
-    background-color: rgba(39, 161, 197, 0.5);
+    background-color:#212121;
 }
 
    
