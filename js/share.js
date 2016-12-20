@@ -47,10 +47,6 @@ var menuBar =
                            '<a href="drug.html" class="external">Drug</a>'+
                         '</li>'+
                          '<li class="side-menu-item">'+
-                          '<img class="menu-icon" src="img/menu/planet-earth.png">'+
-                           '<a href="favorite.html" class="external">Earth</a>'+
-                        '</li>'+
-                         '<li class="side-menu-item">'+
                           '<img class="menu-icon" src="img/menu/fries.png">'+
                            '<a href="food.html" class="external">Food</a>'+
                         '</li>'+
@@ -70,14 +66,16 @@ var menuBar =
                           '<img class="menu-icon" src="img/menu/flask.png">'+
                            '<a href="science.html" class="external">Science</a>'+
                         '</li>'+
+                        
                          '<li class="side-menu-item">'+
-                          '<img class="menu-icon" src="img/menu/team.png">'+
-                           '<a href="favorite.html" class="external">Society</a>'+
+                          '<img class="menu-icon" src="img/menu/setting.png">'+
+                           '<a href="setting.html" class="external">Settings</a>'
+                        /*
                         '</li>'+
                          '<li class="side-menu-item">'+
                           '<img class="menu-icon" src="img/menu/rocket.png">'+
                            '<a href="favorite.html" class="external">Univers</a>'+
-                        '</li>'
+                        '</li>' */
 
 $(".side-menu").append(menuBar);
 
@@ -125,9 +123,7 @@ function shareFact(){
         }, 'jpg',100,'myScreenShot');
     }
 
-    $(".fa-share-alt").click(function(){
-        shareFact();
-    })
+   
     
 
 // Function that allow you to copy the text    
@@ -163,7 +159,8 @@ function slideChecker(){
 function favoriteFact(){        
 $(document).ready(function(){
     
-    if($(".swiper-slide-active").attr("data-favorite")=="false"){ /// check to see the slide data favorite (is not added to favorite)
+if($(".swiper-slide-active").attr("data-favorite")=="false")
+    { /// check to see the slide data favorite (is not added to favorite)
 /// adding it to favorite    
     
     var fact_ID = $(".swiper-slide-active").attr("id") //  (true,false) getting fact id name which will be used to help control heart color and data favorite
@@ -207,11 +204,14 @@ else if($(".swiper-slide-active").attr("data-favorite")=="true")
 ;}
 
 mySwiper.on('slideChangeEnd',function(){
+    
     $("#bottom-btn-copy-hidden").fadeIn(100);
     $("#bottom-btn-forward-hidden").fadeIn(100);
     $("#bottom-btn-favorite-hidden").fadeIn(100);
     $("#bottom-btn-share-hidden").fadeIn(100);
     $(".fa-microphone").css("opacity","1");
+    mySwiper.removeSlide(0);
+    text_to_speak();
     
 })
 
@@ -224,8 +224,8 @@ mySwiper.on('slideChangeEnd',function(){
  function text_to_speak(){
         var speak = $(".swiper-slide-active").text();
           TTS
-        .speak(speak, function () {
-            /// alert('success');
+            .speak(speak, function () {
+            alert('finish speaking');
         }, function (reason) {
             
         });
