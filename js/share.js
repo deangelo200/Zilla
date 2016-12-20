@@ -56,7 +56,7 @@ var menuBar =
                         '</li>'+
                          '<li class="side-menu-item">'+
                           '<img class="menu-icon" src="img/menu/carriage.png">'+
-                           '<a href="favorite.html" class="external">History</a>'+
+                           '<a href="history.html" class="external">History</a>'+
                         '</li>'+
                          '<li class="side-menu-item">'+
                           '<img class="menu-icon" src="img/menu/dice.png">'+

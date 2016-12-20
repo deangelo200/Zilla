@@ -1,0 +1,18 @@
+
+.picture-background{
+background-image:linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url("../img/fact-img/history2.jpg");
+background-position:center;
+background-size:cover;
+}
+
+
+
+
+.main-home-nav{
+   background-color:rgba(211, 84, 0, 0.7);
+}
+
+.main-home-nav:after,
+.main-home-nav:before{
+    background-color: rgba(211, 84, 0, 0.7);
+}
