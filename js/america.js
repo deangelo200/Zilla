@@ -34,7 +34,7 @@ fastClicks:true
        
       
         var example = 
-                   `<div class='swiper-slide' id="${'america_id_'+i}" data-fact = "${'america_fact_'+i}" data-favorite="false">` +
+                   `<div class='swiper-slide' id="${'africa_id_'+i}" data-fact = "${'america_fact_'+i}" data-favorite="false">` +
                             "<span>"+lines[i]+"</span>"+
                         "</div>";
  
