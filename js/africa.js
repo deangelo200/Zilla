@@ -26,7 +26,7 @@ var mySwiper = myApp.swiper('.swiper-container', {
 fastClicks:true
 }); 
 
- $.get('fact-data/usa.txt',function(data){
+ $.get('fact-data/africa.txt',function(data){
     var lines = data.split("~");
     var arraytest = data.split("~").length; 
   
