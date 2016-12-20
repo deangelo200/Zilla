@@ -9,6 +9,10 @@ var menuBar =
                         '<li class="side-menu-item">'+
                             '<img class="menu-icon" src="img/menu/africa.png">'+
                            '<a href="africa.html" class="external">Africa</a>'+
+                        '</li>'+
+                        '<li class="side-menu-item">'+
+                            '<img class="menu-icon" src="img/menu/america.png">'+
+                           '<a href="america.html" class="external">U.S.A</a>'+
                         '</li>'+ 
                         '<li class="side-menu-item">'+
                             '<img class="menu-icon" src="img/menu/penguin.png">'+
