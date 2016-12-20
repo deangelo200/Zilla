@@ -210,8 +210,8 @@ mySwiper.on('slideChangeEnd',function(){
     $("#bottom-btn-favorite-hidden").fadeIn(100);
     $("#bottom-btn-share-hidden").fadeIn(100);
     $(".fa-microphone").css("opacity","1");
+      mySwiper.removeSlide(0);
     if(localFact.getItem("checkBoxValue")=="true"){
-        mySwiper.removeSlide(0);
         text_to_speak();
     }
    
