@@ -202,7 +202,7 @@ else if($(".swiper-slide-active").attr("data-favorite")=="true")
     
 })
 ;}
-
+var temp = true;
 mySwiper.on('slideChangeEnd',function(){
     
     $("#bottom-btn-copy-hidden").fadeIn(100);
@@ -210,7 +210,11 @@ mySwiper.on('slideChangeEnd',function(){
     $("#bottom-btn-favorite-hidden").fadeIn(100);
     $("#bottom-btn-share-hidden").fadeIn(100);
     $(".fa-microphone").css("opacity","1");
-      mySwiper.removeSlide(0);
+    if(temp){
+       mySwiper.removeSlide(0);
+        temp = false;
+    }
+    
     if(localFact.getItem("checkBoxValue")=="true"){
         text_to_speak();
     }
