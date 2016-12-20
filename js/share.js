@@ -215,7 +215,7 @@ mySwiper.on('slideChangeEnd',function(){
         temp = false;
     }
     
-    if(localFact.getItem("checkBoxValue")=="true"){
+    if(localStorage.getItem("checkBoxValue")=="true"){
         text_to_speak();
     }
    

@@ -26,7 +26,6 @@ fastClicks:true
 
 $('.checkbox').click(function(){
     if($(".checkbox").prop('checked')){
-    var checkBoxValue = true;
     localStorage.setItem("checkBoxValue",true);
 }
     else{
