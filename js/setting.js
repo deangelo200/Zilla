@@ -26,9 +26,18 @@ fastClicks:true
 
 $('.checkbox').click(function(){
     if($(".checkbox").prop('checked')){
-    alert('checked');
+    var checkBoxValue = true;
+    localStorage.setItem("checkBoxValue",true);
 }
     else{
-      alert("unchecked");  
+      localStorage.setItem("checkBoxValue",false); 
     }
 })
+
+if(localStorage.getItem("checkBoxValue")=="true"){
+    $(".checkbox").attr("checked","checked")
+}
+
+else{
+     $(".checkbox").removeAttr("checked");
+}

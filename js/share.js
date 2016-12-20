@@ -210,8 +210,11 @@ mySwiper.on('slideChangeEnd',function(){
     $("#bottom-btn-favorite-hidden").fadeIn(100);
     $("#bottom-btn-share-hidden").fadeIn(100);
     $(".fa-microphone").css("opacity","1");
-    mySwiper.removeSlide(0);
-    text_to_speak();
+    if(localFact.getItem("checkBoxValue")=="true"){
+        mySwiper.removeSlide(0);
+        text_to_speak();
+    }
+   
     
 })
 
@@ -222,10 +225,11 @@ mySwiper.on('slideChangeEnd',function(){
   });
 
  function text_to_speak(){
+         mySwiper.lockSwipes();
         var speak = $(".swiper-slide-active").text();
           TTS
             .speak(speak, function () {
-            alert('finish speaking');
+             mySwiper.unlockSwipes();
         }, function (reason) {
             
         });
