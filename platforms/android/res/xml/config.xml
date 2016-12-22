@@ -14,9 +14,6 @@
     <feature name="Screenshot">
         <param name="android-package" value="com.darktalker.cordova.screenshot.Screenshot" />
     </feature>
-    <feature name="mMedia">
-        <param name="android-package" value="com.rjfun.cordova.mmedia.mMediaAdPlugin" />
-    </feature>
     <feature name="TTS">
         <param name="android-package" value="com.wordsbaking.cordova.tts.TTS" />
         <param name="onload" value="true" />

@@ -8,24 +8,14 @@ function onLoad()
     
     function initApp(){
       
-        var ad_units = 
+       var ad_units = 
         {
-            android : 
-            {
-            banner : "234772"    
-            }
+            ios : "publisher_id_for_ios_xxx",
+            android : "fe96717d9875b9da4339ea5367eff1ec"
         };
 
-      var adid = ( /(android)/i.test(navigator.userAgent) ) ? ad_units.android : ad_units.ios;
-    
-        if(mMedia) mMedia.createBanner({
-        adId : adid.banner,
-        autoShow : true,
-        overlap : true,
-        position : mMedia.AD_POSITION.BOTTOM_CENTER
-    });
-    }
-   
+    if(MobFox) MobFox.createBanner( publisherId );
+
      
     
 		

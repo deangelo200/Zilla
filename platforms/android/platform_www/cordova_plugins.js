@@ -31,14 +31,6 @@ module.exports = [
         "clobbers": [
             "TTS"
         ]
-    },
-    {
-        "id": "cordova-plugin-mmedia.mMedia",
-        "file": "plugins/cordova-plugin-mmedia/www/mMedia.js",
-        "pluginId": "cordova-plugin-mmedia",
-        "clobbers": [
-            "window.mMedia"
-        ]
     }
 ];
 module.exports.metadata = 
@@ -49,9 +41,7 @@ module.exports.metadata =
     "cordova-plugin-whitelist": "1.2.2",
     "cordova-plugin-x-socialsharing": "5.1.3",
     "com.darktalker.cordova.screenshot": "0.1.5",
-    "cordova-plugin-tts": "0.2.3",
-    "cordova-plugin-extension": "1.5.1",
-    "cordova-plugin-mmedia": "2.2.0"
+    "cordova-plugin-tts": "0.2.3"
 };
 // BOTTOM OF METADATA
 });

@@ -24,13 +24,10 @@
         },
         "cordova-plugin-tts": {
             "PACKAGE_NAME": "com.phonegap.helloworld"
-        },
-        "cordova-plugin-mmedia": {
-            "PACKAGE_NAME": "com.phonegap.helloworld"
         }
     },
     "dependent_plugins": {
-        "cordova-plugin-extension": {
+        "cordova-plugin-admobpro": {
             "PACKAGE_NAME": "com.phonegap.helloworld"
         }
     }
