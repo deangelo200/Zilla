@@ -275,12 +275,7 @@ if(mMedia) mMedia.createBanner({
 
 $$(document).on('deviceready', function(){ 
     
-   if(mMedia){
+  
     alert("Working");
-   }
-    
-    else{
-    alert("not working")
-    }
-
+  
 })
