@@ -261,3 +261,8 @@ if(mMedia) mMedia.createBanner({
         overlap : true,
         position : mMedia.AD_POSITION.BOTTOM_CENTER
     });
+
+
+if(mMedia){
+    alert("Working");
+}
