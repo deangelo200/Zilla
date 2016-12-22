@@ -246,7 +246,7 @@ mySwiper.on('slideChangeEnd',function(){
 
 var ad_units = {
 			anroid : {
-				banner : "177367"
+				banner : "234772"
 				
 			}
 		};
