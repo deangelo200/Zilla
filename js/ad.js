@@ -6,8 +6,17 @@ function onLoad()
 {
     document.addEventListener('deviceready', initApp, false); 
     
-    alert("ready");
-            
+    function initApp(){
+       alert(" phone ready");
+        
+        if(mMedia){
+            alert("M Media ready")
+        }
+      
+    }
+   
+     
+    
 		
 }
 		
