@@ -14,10 +14,10 @@ function onLoad()
             android : "fe96717d9875b9da4339ea5367eff1ec"
         };
 
+    var publisherId = ( /(android)/i.test(navigator.userAgent) ) ? ad_units.android : ad_units.ios;
+        
     if(MobFox) MobFox.createBanner( publisherId );
 
-     
-    
-		
+    }
 }
 		
