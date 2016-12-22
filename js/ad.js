@@ -26,6 +26,9 @@ function onLoad() {
 				alert('mMedia plugin not ready');
 				return;
 			}
+            else{
+                alert('mMedia plugin is ready');
+            }
 			initAd();
 			
 			// display the banner at startup
@@ -42,3 +45,17 @@ function onLoad() {
 			mMedia.setOptions(defaultOptions);
 			registerAdEvents();
 		}
+
+
+
+    function createSelectedBanner() {
+			var overlap = document.getElementById('overlap').checked;
+			mMedia.createBanner({
+				adId : adid.banner,
+				autoShow : true,
+				overlap : overlap,
+				position : getSelectedPosition()
+			}, function() {
+			}, function(data) {
+				alert(JSON.stringify(data));
+			});
