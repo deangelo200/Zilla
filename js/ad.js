@@ -1,61 +1,13 @@
- ///// Code for ad 
+ ///// Code for ad  "234772"
 
 
 
-function onLoad() {
-			if ((/(ipad|iphone|ipod|android)/i.test(navigator.userAgent))) {
-				document.addEventListener('deviceready', initApp, false);
-			} else {
-				initApp();
-			}
-		}
-		var ad_units = {
-			ios : {
-				banner : "177365",
-				interstitial : "177364"
-			},
-			android : {
-				banner : "234772"
-				
-			}
-		};
-		// select the right Ad Id according to platform
-		var adid = (/(android)/i.test(navigator.userAgent)) ? ad_units.android : ad_units.ios;
-		function initApp() {
-			if (! mMedia) {
-				alert('mMedia plugin not ready');
-				return;
-			}
-            else{
-                alert('mMedia plugin is ready');
-            }
-			initAd();
-			
-			// display the banner at startup
-			createSelectedBanner();
-		}
-		function initAd() {
-			var defaultOptions = {
-				// adId: adid.banner,
-				position : mMedia.AD_POSITION.BOTTOM_CENTER,
-				// x: integer,		// valid when set position to 0 / POS_XY
-				// y: integer,		// valid when set position to 0 / POS_XY
-				// autoShow: true // auto show interstitial ad when loaded, set to false if prepare/show
-			};
-			mMedia.setOptions(defaultOptions);
-			registerAdEvents();
-		}
-
-
-
-    function createSelectedBanner() {
-			var overlap = document.getElementById('overlap').checked;
-			mMedia.createBanner({
-				adId : adid.banner,
-				autoShow : true,
-				overlap : overlap,
-				position : getSelectedPosition()
-			}, function() {
-			}, function(data) {
-				alert(JSON.stringify(data));
-			});
+function onLoad() 
+{
+    document.addEventListener('deviceready', initApp, false); 
+    
+    alert("ready");
+            
+		
+}
+		
