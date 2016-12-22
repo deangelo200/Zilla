@@ -240,6 +240,14 @@ mySwiper.on('slideChangeEnd',function(){
              
      
  }
+
+
+
+
+
+
+
+
     
  ///// Code for ad 
 
@@ -263,6 +271,16 @@ if(mMedia) mMedia.createBanner({
     });
 
 
-if(mMedia){
+
+
+$$(document).on('deviceready', function(){ 
+    
+   if(mMedia){
     alert("Working");
-}
+   }
+    
+    else{
+    alert("not working")
+    }
+
+})
