@@ -251,7 +251,7 @@ var ad_units = {
 			}
 		};
 
-
+//
    
 var adid = ( /(android)/i.test(navigator.userAgent) ) ? ad_units.android : ad_units.ios;
 
