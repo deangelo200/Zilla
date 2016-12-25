@@ -11,7 +11,7 @@ function onLoad()
        var ad_units = 
         {
             ios : "publisher_id_for_ios_xxx",
-            android : "fe96717d9875b9da4339ea5367eff1ec"
+            android : "81a8cfeb947c3b5937b4c06d93c68343"
         };
 
     var publisherId = ( /(android)/i.test(navigator.userAgent) ) ? ad_units.android : ad_units.ios;
